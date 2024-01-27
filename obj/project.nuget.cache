@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "lJe5lVtCHjoZlPwUj6rQ/KsWGbLujKcks5S69IS5Xww+U+nVGaCsCYxM65xr0D77SFU0WBcRVII6pOPAeclx+w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\natha\\source\\repos\\BudgetBuddy\\BudgetBuddy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\6.0.16\\microsoft.aspnetcore.authentication.negotiate.6.0.16.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.16\\microsoft.aspnetcore.connections.abstractions.6.0.16.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.extensions.features\\6.0.16\\microsoft.extensions.features.6.0.16.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\system.directoryservices.protocols\\6.0.1\\system.directoryservices.protocols.6.0.1.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
