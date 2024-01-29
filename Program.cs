@@ -1,19 +1,14 @@
-using Microsoft.AspNetCore.Authentication.Negotiate;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<DbContext>(options =>
+	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+	.AddEntityFrameworkStores<DbContext>();
+
+// Add other necessary services like controllers, Razor Pages, etc.
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
-   .AddNegotiate();
-
-builder.Services.AddAuthorization(options =>
-{
-	// By default, all incoming requests will be authorized according to the default policy.
-	options.FallbackPolicy = options.DefaultPolicy;
-});
-builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
@@ -36,5 +31,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapRazorPages();
 
 app.Run();
